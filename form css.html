@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            margin:15px 30px;
+        }
+        .container{
+            background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            background-color: #f2f2f2;
+            padding:15px 20px 5px;
+            border:1px solid lightcoral;
+            border-radius:4px;
+        }
+        p{
+            width: 100;
+            padding:12px;
+            border:1px solid;
+        }
+        fieldset{
+            background-color: lightgoldenrodyellow;
+        }
+        .main{
+            text-align: center;
+            border-radius: 10mm;
+            background-color: #757575;
+            
+            
+
+
+         
+        }
+        input[type="submit"]
+        {
+            text-align: center;
+            background-color: #3768a0;
+            padding:12px 40px;
+            border:none;
+            cursor:pointer;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+    <form action="">
+    <h1 class="main">payment form</h1>
+    ALL ARE REQUIRED FIELDS
+    <h2>contact information</h2>
+    <p>name:* <input type="text" name="name"required></p>
+    
+<p>
+    <fieldset>
+        <legend>gender</legend>
+    male <input type="radio" name="gender" id="male">
+    female <input type="radio" name="gender" id="female">
+</p>
+</fieldset>
+<legend>INFO.</legend>
+<p> address<textarea placeholder name="" id="" cols="30" rows="10"></textarea></p>
+<p> email <input type="email" name="email" id=""></p>
+<p>pincode<input type="number" name="pincode" id="pinode"></p>
+<p>mother name<textarea name="" name ="name" id=""></textarea></p>
+<p> father name<input type="father name" name="name" id=""></p>
+<h1>payment</h1>
+<p> card type:
+    <select name="card type" id="card type">
+        <option value=""> select card type</option>
+        <option value="visa">visa</option>
+        <option value="mastercard">mastercard</option>
+        <option value="rupay">rupay</option>
+    </select>
+</p>
+        <p>card number<input type="number" name="card name" id="card number"></p>
+        <p>expire date<input type="date" name="date" id="exp. date"></p>
+        <p>cvv <input type="password" name="password " id=""></p>
+        <p> <input type="submit"value="paynow"></p>
+    </div>
+    
+
+</form>    
+</body>
+</html>
