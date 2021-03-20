@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        background:#010615;
+
+    }
+    .box{
+        position:relative;
+        width:300px;
+        height:300px;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        margin:40px;
+        transition: 0.5%;
+    }
+    .box:hover{
+        height:400px;
+    }
+    .box .imgbx{
+         position:absolute;
+         top:0;
+         left:0;
+         width:300px;
+         height:400px;
+         padding:10px;
+         box-sizing:border-box;
+         resize: vertical;
+    }
+    .box .imgbx img{
+        max-width: 100%;
+        opacity: 0.1;
+        transition:0.5%;
+    }
+    .box:hover .imgbx img{
+        opacity:1;
+    }
+    .box:before{
+        content:'';
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom: -2px;
+        background: #fff;
+        z-index: -1;
+    }
+    .box:after{
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        right:-2px;
+        bottom: -2px;
+        z-index:-2;
+        filter:blur(40px);
+        background: #fff;
+        z-index: -2;
+        filter:blur(40px);
+    }
+    .box:before,.box:after{
+        background:linear-gradient(235deg,#898989,red,#00bcd4)
+    }
+    .box .content{
+        position:absolute;
+        bottom:0;
+        left:10px;
+        right:10px;
+        bottom:10px;
+        height:90px;
+        background:rgba(0,0,0,0,4);
+        justify-content:center;
+        text-align: center;
+        align-items:center;
+        opacity:0;
+        transition:0.5%;
+
+    }
+    .box content h2{
+        font-size:30px;
+        color:white;
+        font-weight:500;
+        letter-spacing: 1;
+    }
+    .h3{
+        font-size:50px ;
+        text-decoration-color: whitesmoke;
+        align:bottom;
+
+
+        
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="imgbx">
+            <img src="LRM_EXPORT_187157919598187_20190903_191601967jpeg.0-01.jpg">
+        </div>
+        
+            <h3>RAHUL BHATIA
+                EXECUTIVE
+            </h3>
+        
+
+    </div>
+</body>
+</html>
